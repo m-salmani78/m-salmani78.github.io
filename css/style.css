@@ -1,0 +1,237 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --text: #1a1a1a;
+  --text-muted: #444;
+  --link: #0b57d0;
+  --link-hover: #0842a0;
+  --border: #e0e0e0;
+  --bg: #fafafa;
+  --card-bg: #fff;
+  --max-width: 42rem;
+}
+
+html {
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  line-height: 1.6;
+  color: var(--text);
+  background: var(--bg);
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 2.5rem 1.25rem 3rem;
+  background: var(--card-bg);
+  min-height: 100vh;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+h1 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin: 0 0 0.35rem;
+  letter-spacing: -0.01em;
+}
+
+.subtitle {
+  margin: 0 0 0.75rem;
+  color: var(--text-muted);
+  font-size: 1rem;
+}
+
+.links {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  font-size: 0.9rem;
+}
+
+.links a {
+  color: var(--link);
+  text-decoration: none;
+}
+
+.links a:hover {
+  color: var(--link-hover);
+  text-decoration: underline;
+}
+
+.sep {
+  margin: 0 0.4rem;
+  color: #999;
+}
+
+section {
+  margin-bottom: 1.75rem;
+}
+
+h2 {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text);
+  margin: 0 0 0.75rem;
+  padding-bottom: 0.25rem;
+  border-bottom: 1px solid var(--border);
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0 0 0.25rem;
+  line-height: 1.35;
+}
+
+.subheading {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin: 1.25rem 0 0.5rem;
+  border: none;
+  text-transform: none;
+  letter-spacing: normal;
+  padding: 0;
+}
+
+.entry {
+  margin-bottom: 1.25rem;
+}
+
+.entry:last-child {
+  margin-bottom: 0;
+}
+
+.meta {
+  margin: 0.1rem 0;
+  font-size: 0.92rem;
+  color: var(--text-muted);
+}
+
+.note {
+  margin: -0.25rem 0 0.75rem;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+p {
+  margin: 0 0 0.75rem;
+}
+
+ul {
+  margin: 0.35rem 0 0;
+  padding-left: 1.25rem;
+}
+
+li {
+  margin-bottom: 0.3rem;
+}
+
+.skills-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.skills-list li {
+  margin-bottom: 0.45rem;
+}
+
+.project-list li {
+  margin-bottom: 0.5rem;
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--link-hover);
+  text-decoration: underline;
+}
+
+@media (min-width: 600px) {
+  .container {
+    padding: 3rem 2rem 4rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    min-height: auto;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+@media print {
+  :root {
+    --bg: #fff;
+  }
+
+  body {
+    background: #fff;
+    font-size: 11pt;
+  }
+
+  .container {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-shadow: none;
+  }
+
+  header {
+    border-bottom-color: #ccc;
+    margin-bottom: 1rem;
+    padding-bottom: 0.75rem;
+  }
+
+  h2 {
+    page-break-after: avoid;
+    border-bottom-color: #ccc;
+  }
+
+  h3 {
+    page-break-after: avoid;
+  }
+
+  .entry {
+    page-break-inside: avoid;
+  }
+
+  a {
+    color: var(--text);
+    text-decoration: none;
+  }
+
+  a[href^="http"]::after {
+    content: " (" attr(href) ")";
+    font-size: 0.85em;
+    color: #555;
+    word-break: break-all;
+  }
+
+  .links a[href^="http"]::after {
+    content: none;
+  }
+}
