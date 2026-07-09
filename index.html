@@ -3,76 +3,150 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="CV of Mohammad Mahdi Salmani-Zarchi — M.Sc. Student in Artificial Intelligence, University of Tehran. Research on LLMs, reinforcement learning, and instruction following.">
+  <meta name="description" content="Mohammad Mahdi Salmani-Zarchi — M.Sc. Student in Artificial Intelligence at University of Tehran. Research on LLMs, reinforcement learning, and instruction following.">
   <title>Mohammad Mahdi Salmani-Zarchi</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <main class="container">
-    <header>
-      <h1>Mohammad Mahdi Salmani-Zarchi</h1>
-      <p class="subtitle">M.Sc. Student in Artificial Intelligence, University of Tehran</p>
-      <nav class="links" aria-label="External profiles">
-        <a href="https://www.linkedin.com/in/mahdi-salmani" rel="noopener noreferrer">LinkedIn</a>
-        <span class="sep" aria-hidden="true">•</span>
-        <a href="https://scholar.google.com/citations?user=sZt7yj0AAAAJ&amp;hl=en" rel="noopener noreferrer">Google Scholar</a>
-        <span class="sep" aria-hidden="true">•</span>
-        <a href="https://github.com/m-salmani78" rel="noopener noreferrer">GitHub</a>
-      </nav>
-    </header>
+  <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="sidebar">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
 
-    <section id="research-interests">
-      <h2>Research Interests</h2>
-      <p>Large Language Models, Social Reasoning and Theory of Mind in LLMs, Reinforcement Learning, Instruction Following, Agentic LLMs, Data Privacy and Interpretability in Foundation Models.</p>
+  <div class="overlay" hidden></div>
+
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-inner">
+      <a class="cv-btn" href="My_CV.md" download>Download CV</a>
+
+      <img class="profile-img" src="images/profile.svg" alt="Mohammad Mahdi Salmani-Zarchi" width="140" height="140">
+
+      <h1 class="sidebar-name">Mohammad Mahdi Salmani-Zarchi</h1>
+
+      <div class="sidebar-contact">
+        <a href="https://www.linkedin.com/in/mahdi-salmani" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://scholar.google.com/citations?user=sZt7yj0AAAAJ&amp;hl=en" rel="noopener noreferrer">Google Scholar</a>
+        <a href="https://github.com/m-salmani78" rel="noopener noreferrer">GitHub</a>
+      </div>
+
+      <nav class="sidebar-nav" aria-label="Page sections">
+        <ul>
+          <li><a href="#about" class="nav-link active">About Me</a></li>
+          <li><a href="#news" class="nav-link">News</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#publications" class="nav-link">Publications</a></li>
+          <li><a href="#experience" class="nav-link">Experiences</a></li>
+          <li><a href="#teaching" class="nav-link">Teaching</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#service" class="nav-link">Scholarships &amp; Service</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+        </ul>
+      </nav>
+
+      <footer class="sidebar-footer">
+        <p>&copy; 2026 Mohammad Mahdi Salmani-Zarchi</p>
+        <p class="muted">All rights reserved</p>
+        <p class="muted">Last update: Jul 2026</p>
+      </footer>
+    </div>
+  </aside>
+
+  <main class="content">
+    <section id="about" class="section">
+      <h2>About Me</h2>
+      <div class="prose">
+        <p>
+          I am an M.Sc. student in Artificial Intelligence at the University of Tehran, working at the intersection of
+          large language models, reinforcement learning, and human preference alignment. My research focuses on
+          instruction following, theory of mind in LLMs, and building stable RL frameworks for multi-constraint tasks.
+        </p>
+        <p>
+          I have industry experience as an NLP Engineer at Hamrahe Aval (MCI), where I developed and deployed
+          resource-efficient LLM pipelines, and I recently completed a research internship at ESSEC Business School
+          in France on dynamic curriculum learning. I enjoy bridging rigorous research with practical engineering —
+          from fine-tuning and RLHF to scalable inference with vLLM.
+        </p>
+        <p>
+          Feel free to reach out if you find my work interesting or would like to collaborate.
+        </p>
+      </div>
     </section>
 
-    <section id="skills">
-      <h2>Skills</h2>
-      <ul class="skills-list">
-        <li><strong>AI &amp; ML:</strong> Machine Learning, Deep Learning, Statistical Inference, Reinforcement Learning</li>
-        <li><strong>NLP &amp; LLMs:</strong> PEFT (LoRA, QLoRA), RLHF, RAG, Natural Language Inference, Agentic LLMs</li>
-        <li><strong>Frameworks &amp; Systems:</strong> PyTorch, TensorFlow, vLLM, Distributed Training, MLflow, Optuna</li>
-        <li><strong>Programming &amp; Tools:</strong> Python, C++, JavaScript; Git, LaTeX, Docker</li>
+    <section id="news" class="section">
+      <h2>News</h2>
+      <ul class="news-list">
+        <li>
+          <span class="news-date">Jul 2026</span>
+          <span class="news-text">Our paper <strong>MDP-GRPO</strong> accepted to <strong>ACL 2026</strong> Main Conference</span>
+        </li>
+        <li>
+          <span class="news-date">Jul 2026</span>
+          <span class="news-text">Serving as <strong>Virtual Session Chair</strong> at ACL 2026</span>
+        </li>
+        <li>
+          <span class="news-date">2025</span>
+          <span class="news-text">Research internship at <strong>ESSEC Business School</strong>, France (ODCL Project)</span>
+        </li>
+        <li>
+          <span class="news-date">2025</span>
+          <span class="news-text">Awarded <strong>MCI Scholarship</strong> (Hamrahe Aval) for M.Sc. research in AI</span>
+        </li>
+        <li>
+          <span class="news-date">2025</span>
+          <span class="news-text">Paper on autistic theory of mind in LLMs submitted to <em>Computers in Human Behavior</em></span>
+        </li>
+        <li>
+          <span class="news-date">2024</span>
+          <span class="news-text">Joined <strong>Hamrahe Aval (MCI)</strong> as NLP Engineer</span>
+        </li>
       </ul>
     </section>
 
-    <section id="education">
+    <section id="education" class="section">
       <h2>Education</h2>
 
-      <article class="entry">
-        <h3>M.Sc. in Computer Engineering – Artificial Intelligence</h3>
-        <p class="meta">University of Tehran, Tehran, Iran</p>
+      <article class="timeline-entry">
+        <div class="timeline-header">
+          <h3>M.Sc. in Computer Engineering – Artificial Intelligence</h3>
+          <span class="timeline-date">Sep 2023 – Present</span>
+        </div>
+        <p class="institution">University of Tehran, Tehran, Iran</p>
         <p class="meta">GPA: 17.95 / 20</p>
-        <p class="meta">Sep 2023 – Present</p>
-        <ul>
-          <li><strong>Thesis:</strong> The Impact of Human Preference Alignment on Large Language Models Instruction Following</li>
-        </ul>
+        <p class="meta"><strong>Thesis:</strong> The Impact of Human Preference Alignment on Large Language Models Instruction Following</p>
       </article>
 
-      <article class="entry">
-        <h3>B.Sc. in Electrical Engineering</h3>
-        <p class="meta">Isfahan University of Technology, Isfahan, Iran</p>
+      <article class="timeline-entry">
+        <div class="timeline-header">
+          <h3>B.Sc. in Electrical Engineering</h3>
+          <span class="timeline-date">Sep 2018 – Dec 2022</span>
+        </div>
+        <p class="institution">Isfahan University of Technology, Isfahan, Iran</p>
         <p class="meta">GPA: 15.28 / 20</p>
-        <p class="meta">Sep 2018 – Dec 2022</p>
       </article>
     </section>
 
-    <section id="publications">
+    <section id="publications" class="section">
       <h2>Publications</h2>
-      <p class="note">(*) indicates first author</p>
+      <p class="section-note">(*) indicates first author</p>
 
-      <article class="entry">
+      <article class="pub-entry">
         <h3>MDP-GRPO: Stabilized Group Relative Policy Optimization for Multi-Constraint Instruction Following (*)</h3>
-        <p class="meta">ACL 2026 Main Conference. <a href="https://aclanthology.org/2026.acl-long.1982/" rel="noopener noreferrer">aclanthology.org/2026.acl-long.1982</a></p>
+        <p class="venue">ACL 2026 Main Conference</p>
+        <p class="meta"><a href="https://aclanthology.org/2026.acl-long.1982/" rel="noopener noreferrer">aclanthology.org/2026.acl-long.1982</a></p>
         <ul>
           <li>Identified and formalized three failure modes of GRPO under discrete, low-dispersion reward settings: low-variance amplification, mean-centering blindness, and zero-variance collapse</li>
           <li>Proposed MDP-GRPO, a stabilized RL framework for multi-constraint instruction following with verifiable rewards, improving training stability and achieving higher constraint satisfaction</li>
         </ul>
       </article>
 
-      <article class="entry">
-        <h3>From Neurotypical to Neurodiverse: Evaluating LLMs’ Ability to Simulate Autistic Theory of Mind (*)</h3>
-        <p class="meta">Under review at <em>Computers in Human Behavior (Q1 Journal)</em></p>
+      <article class="pub-entry">
+        <h3>From Neurotypical to Neurodiverse: Evaluating LLMs' Ability to Simulate Autistic Theory of Mind (*)</h3>
+        <p class="venue">Under review at <em>Computers in Human Behavior</em> (Q1 Journal)</p>
         <p class="meta"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5717345" rel="noopener noreferrer">papers.ssrn.com</a></p>
         <ul>
           <li>Proposed a DSM-5–grounded evaluation framework for assessing theory-of-mind reasoning in LLMs under autism-spectrum–inspired cognitive constraints</li>
@@ -81,12 +155,15 @@
       </article>
     </section>
 
-    <section id="work-experience">
-      <h2>Work Experience</h2>
+    <section id="experience" class="section">
+      <h2>Notable Experiences</h2>
 
-      <article class="entry">
-        <h3>Research Intern, ODCL Project</h3>
-        <p class="meta">ESSEC Business School, Cergy, <strong>France</strong></p>
+      <article class="timeline-entry">
+        <div class="timeline-header">
+          <h3>Research Intern, ODCL Project</h3>
+          <span class="timeline-date">2025</span>
+        </div>
+        <p class="institution">ESSEC Business School, Cergy, France</p>
         <p class="meta"><em>Supervisors:</em> Prof. Emiliano Traversi, Dr. Pegah Alizadeh, Dr. Massinissa Hamidi</p>
         <ul>
           <li>Developed a dynamic curriculum learning framework with graph-based optimization of task ordering</li>
@@ -94,27 +171,33 @@
         </ul>
       </article>
 
-      <article class="entry">
-        <h3>Research Assistant, NLP Lab</h3>
-        <p class="meta">University of Tehran, Iran</p>
+      <article class="timeline-entry">
+        <div class="timeline-header">
+          <h3>Research Assistant, NLP Lab</h3>
+        </div>
+        <p class="institution">University of Tehran, Iran</p>
         <p class="meta"><em>Supervisors:</em> Prof. Heshaam Faili, Dr. M.J. Dousti</p>
         <ul>
           <li>Conducted research on human preference alignment and role-playing in LLMs</li>
         </ul>
       </article>
 
-      <article class="entry">
-        <h3>Natural Language Processing Engineer</h3>
-        <p class="meta">Hamrahe Aval (MCI), Tehran, Iran</p>
+      <article class="timeline-entry">
+        <div class="timeline-header">
+          <h3>Natural Language Processing Engineer</h3>
+        </div>
+        <p class="institution">Hamrahe Aval (MCI), Tehran, Iran</p>
         <ul>
           <li>Developed and deployed resource-efficient LLM pipelines using fine-tuning and RL</li>
           <li>Worked with vLLM for inference and MLflow for experiment tracking</li>
         </ul>
       </article>
 
-      <article class="entry">
-        <h3>Research Assistant, Cognitive Science Lab</h3>
-        <p class="meta">University of Tehran, Iran</p>
+      <article class="timeline-entry">
+        <div class="timeline-header">
+          <h3>Research Assistant, Cognitive Science Lab</h3>
+        </div>
+        <p class="institution">University of Tehran, Iran</p>
         <p class="meta"><em>Supervisor:</em> Prof. Abdol-Hossein Vahabie</p>
         <ul>
           <li>Investigated theory-of-mind and social reasoning in LLMs using cognitively inspired experimental designs</li>
@@ -122,65 +205,121 @@
       </article>
     </section>
 
-    <section id="teaching">
+    <section id="teaching" class="section">
       <h2>Teaching Assistant</h2>
 
-      <article class="entry">
-        <h3>Natural Language Processing</h3>
-        <p class="meta">University of Tehran</p>
-        <p class="meta">Instructor: Heshaam Faili</p>
-        <p class="meta"><a href="https://nlp-ut.github.io/" rel="noopener noreferrer">nlp-ut.github.io</a> — Fall 2025</p>
+      <article class="timeline-entry">
+        <div class="timeline-header">
+          <h3>Natural Language Processing</h3>
+          <span class="timeline-date">Fall 2025</span>
+        </div>
+        <p class="institution">University of Tehran — Instructor: Heshaam Faili</p>
+        <p class="meta"><a href="https://nlp-ut.github.io/" rel="noopener noreferrer">nlp-ut.github.io</a></p>
         <ul>
           <li>Designed a project and workshop on fine-tuning LLMs using LoRA/PEFT</li>
         </ul>
       </article>
 
-      <article class="entry">
-        <h3>Large Language Models</h3>
-        <p class="meta">University of Tehran</p>
-        <p class="meta">Instructors: M.J. Dousti, Yadollah Yaghoobzadeh — Spring 2025</p>
+      <article class="timeline-entry">
+        <div class="timeline-header">
+          <h3>Large Language Models</h3>
+          <span class="timeline-date">Spring 2025</span>
+        </div>
+        <p class="institution">University of Tehran — Instructors: M.J. Dousti, Yadollah Yaghoobzadeh</p>
         <ul>
           <li>Developed assignments on in-context learning and RLHF</li>
         </ul>
       </article>
 
-      <article class="entry">
-        <h3>Deep Learning</h3>
-        <p class="meta">University of Tehran</p>
-        <p class="meta">Instructor: Ahmad Kalhor — Fall 2024, Spring 2025</p>
+      <article class="timeline-entry">
+        <div class="timeline-header">
+          <h3>Deep Learning</h3>
+          <span class="timeline-date">Fall 2024, Spring 2025</span>
+        </div>
+        <p class="institution">University of Tehran — Instructor: Ahmad Kalhor</p>
         <ul>
           <li>Designed assignments on image captioning (CNN–RNN, attention mechanisms)</li>
         </ul>
       </article>
     </section>
 
-    <section id="projects">
+    <section id="projects" class="section">
       <h2>Projects</h2>
-      <ul class="project-list">
-        <li><strong>Text2SQL Chatbot:</strong> LLM system for translating queries into SQL and visualizing results — <a href="https://github.com/safdarian/llm-project" rel="noopener noreferrer">GitHub</a></li>
-        <li><strong>Natural Language Inference Optimization:</strong> LoRA/QLoRA tuning for RoBERTa &amp; LLaMA — <a href="https://github.com/m-salmani78/llama3-multinli-qlora" rel="noopener noreferrer">GitHub</a></li>
-        <li><strong>Data Privacy in LLMs:</strong> Evaluated Llama-3.2 against privacy threats — <a href="https://github.com/m-salmani78/llm-data-privacy" rel="noopener noreferrer">GitHub</a></li>
-        <li><strong>Tumor Detection:</strong> CNN-based MRI classification — <a href="https://github.com/m-salmani78/tumor_detection" rel="noopener noreferrer">GitHub</a></li>
-        <li><strong>Machine Translation:</strong> LSTM vs Transformer comparison — <a href="https://github.com/m-salmani78/lstm-vs-transformer-mt" rel="noopener noreferrer">GitHub</a></li>
-        <li><strong>Customer Analytics:</strong> Predictive modeling with privacy-preserving techniques — <a href="https://github.com/m-salmani78/marketing_campaign" rel="noopener noreferrer">GitHub</a></li>
-      </ul>
+      <div class="project-grid">
+        <a class="project-card" href="https://github.com/safdarian/llm-project" rel="noopener noreferrer">
+          <h3>Text2SQL Chatbot</h3>
+          <p>LLM system for translating queries into SQL and visualizing results</p>
+        </a>
+        <a class="project-card" href="https://github.com/m-salmani78/llama3-multinli-qlora" rel="noopener noreferrer">
+          <h3>NLI Optimization</h3>
+          <p>LoRA/QLoRA tuning for RoBERTa &amp; LLaMA on natural language inference</p>
+        </a>
+        <a class="project-card" href="https://github.com/m-salmani78/llm-data-privacy" rel="noopener noreferrer">
+          <h3>Data Privacy in LLMs</h3>
+          <p>Evaluated Llama-3.2 against privacy threats</p>
+        </a>
+        <a class="project-card" href="https://github.com/m-salmani78/tumor_detection" rel="noopener noreferrer">
+          <h3>Tumor Detection</h3>
+          <p>CNN-based MRI classification</p>
+        </a>
+        <a class="project-card" href="https://github.com/m-salmani78/lstm-vs-transformer-mt" rel="noopener noreferrer">
+          <h3>Machine Translation</h3>
+          <p>LSTM vs Transformer comparison</p>
+        </a>
+        <a class="project-card" href="https://github.com/m-salmani78/marketing_campaign" rel="noopener noreferrer">
+          <h3>Customer Analytics</h3>
+          <p>Predictive modeling with privacy-preserving techniques</p>
+        </a>
+      </div>
 
-      <h3 class="subheading">Selected Additional Projects</h3>
-      <ul class="project-list">
-        <li>Monte-Carlo Localization &amp; SLAM — <a href="https://github.com/m-salmani78/vector_robot" rel="noopener noreferrer">GitHub</a></li>
-        <li>Sentiment Analysis with N-grams — <a href="https://github.com/m-salmani78/NLP-Assignments-Part1" rel="noopener noreferrer">GitHub</a></li>
-        <li>Keep Fit (posture anomaly detection) — <a href="https://github.com/m-salmani78/keep_fit" rel="noopener noreferrer">GitHub</a></li>
-        <li>Deep Autoencoder Clustering — <a href="https://github.com/m-salmani78/deep-autoencoder-based-clustering" rel="noopener noreferrer">GitHub</a></li>
+      <h3 class="subsection-title">Selected Additional Projects</h3>
+      <ul class="link-list">
+        <li><a href="https://github.com/m-salmani78/vector_robot" rel="noopener noreferrer">Monte-Carlo Localization &amp; SLAM</a></li>
+        <li><a href="https://github.com/m-salmani78/NLP-Assignments-Part1" rel="noopener noreferrer">Sentiment Analysis with N-grams</a></li>
+        <li><a href="https://github.com/m-salmani78/keep_fit" rel="noopener noreferrer">Keep Fit (posture anomaly detection)</a></li>
+        <li><a href="https://github.com/m-salmani78/deep-autoencoder-based-clustering" rel="noopener noreferrer">Deep Autoencoder Clustering</a></li>
       </ul>
     </section>
 
-    <section id="scholarships">
+    <section id="service" class="section">
       <h2>Scholarships &amp; Academic Service</h2>
-      <ul>
-        <li>MCI Scholarship (Hamrahe Aval): Competitive scholarship supporting M.Sc. research in AI</li>
-        <li>Virtual Session Chair: Annual Meeting of the Association for Computational Linguistics (ACL), 2026</li>
+      <ul class="bullet-list">
+        <li><strong>MCI Scholarship (Hamrahe Aval):</strong> Competitive scholarship supporting M.Sc. research in AI</li>
+        <li><strong>Virtual Session Chair:</strong> Annual Meeting of the Association for Computational Linguistics (ACL), 2026</li>
       </ul>
     </section>
+
+    <section id="skills" class="section">
+      <h2>Skills</h2>
+      <div class="skill-tags">
+        <span class="tag">Machine Learning</span>
+        <span class="tag">Deep Learning</span>
+        <span class="tag">Reinforcement Learning</span>
+        <span class="tag">RLHF</span>
+        <span class="tag">PEFT (LoRA, QLoRA)</span>
+        <span class="tag">RAG</span>
+        <span class="tag">Natural Language Inference</span>
+        <span class="tag">Agentic LLMs</span>
+        <span class="tag">PyTorch</span>
+        <span class="tag">TensorFlow</span>
+        <span class="tag">vLLM</span>
+        <span class="tag">Distributed Training</span>
+        <span class="tag">MLflow</span>
+        <span class="tag">Optuna</span>
+        <span class="tag">Python</span>
+        <span class="tag">C++</span>
+        <span class="tag">JavaScript</span>
+        <span class="tag">Git</span>
+        <span class="tag">LaTeX</span>
+        <span class="tag">Docker</span>
+      </div>
+    </section>
+
+    <footer class="content-footer">
+      <p>&copy; 2026 Mohammad Mahdi Salmani-Zarchi. All rights reserved.</p>
+    </footer>
   </main>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
