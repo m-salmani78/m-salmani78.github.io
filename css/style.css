@@ -169,12 +169,43 @@ a:hover {
   font-size: 0.85rem;
 }
 
-.sidebar-contact a {
+.sidebar-contact > a {
   color: var(--text-muted);
 }
 
-.sidebar-contact a:hover {
+.sidebar-contact > a:hover {
   color: var(--accent);
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.85rem;
+  margin: 0.35rem 0;
+}
+
+.social-icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+  text-decoration: none;
+  opacity: 0.85;
+  transition: opacity 0.15s ease, transform 0.15s ease;
+}
+
+.social-icons a:hover {
+  opacity: 1;
+  transform: translateY(-1px);
+  text-decoration: none;
+}
+
+.social-icons img {
+  display: block;
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
 }
 
 .sidebar-nav {
